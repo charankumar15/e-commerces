@@ -1,0 +1,317 @@
+body {
+  background-color: rgba(253, 251, 251, 0.942);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#Home {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(8, 1, 19);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.products {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.product {
+  background-color: #f3eeee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(15, 15, 15, 0.905);
+  padding: 20px;
+  text-align: center;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.product-image {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.ratings {
+  margin-top: 10px;
+}
+
+.cart {
+  margin-top: 200px;
+  color: white;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart li img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cart li p {
+  margin: 0;
+}
+
+.cart li button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cart li button:hover {
+  background-color: #e53935;
+  transform: scale(1.1);
+}
+
+.button-container .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.button-container .btn:hover {
+  background-color: #333;
+}
+
+.button-container .btn:active {
+  transform: scale(0.95);
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+}
+
+.search-bar {
+  /* position: absolute; */
+  top: 30px;
+  /* left: px; */
+  /* width: 100px; */
+  /* padding: 10px 13px; */
+  border: 1px solid #e0d7d7;
+  border-radius: 4px;
+  background-color: #eae3e3;
+  color: #090101;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #fff;
+  background-color: #f2efef;
+  color: #0e0000;
+}
+
+@keyframes colorChange {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #0e0000;
+  }
+}
+
+.video-container {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #666;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-container .btn:hover {
+  background-color: #777;
+  transform: scale(1.1);
+}
+
+.camera-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.product-details {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  animation: slideIn 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #eae6e6;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  margin-top: 30px;
+}
+
+.footer-social a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  background-color: #1d3753;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
